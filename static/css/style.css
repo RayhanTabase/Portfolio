@@ -43,7 +43,6 @@ header {
 }
 
 .welcome-text {
-  position: static;
   width: 5.625em;
   height: 1.75em;
   display: flex;
