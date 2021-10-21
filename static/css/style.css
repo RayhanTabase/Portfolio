@@ -208,7 +208,7 @@ header {
   width: 100%;
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1.5em;
   row-gap: 3em;
 }
@@ -227,6 +227,7 @@ header {
   border: 1px solid #d0d9d4;
   border-radius: 0.5em;
   padding: 0;
+  border: 2px solid maroon;
 }
 
 .tags {
@@ -235,13 +236,22 @@ header {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .tag {
-  background: #ebf0ee;
   border-radius: 0.25em;
   padding: 0.5em 0.75em 0.5em 0.75em;
 }
+
+.project-card .tags { 
+  margin-bottom: 1em;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+}
+
+.project-card .tag { background: #ebf0ee; }
 
 .project-card img {
   width: 100%;
@@ -271,6 +281,7 @@ header {
   max-height: 15%;
 }
 
+
 #about-me {
   order: 2;
   background-image: url("../images/Background/about-me.png");
@@ -290,12 +301,11 @@ header {
 }
 
 .tech-card .icon {
+  margin-top: 0.2em;
   order: 0;
   width: 5em;
-  min-width: 5em;
   max-width: 5em;
   height: 5em;
-  min-height: 5em;
   max-height: 5em;
   margin-bottom: 2em;
   border-radius: 50%;
