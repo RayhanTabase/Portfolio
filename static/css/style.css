@@ -275,6 +275,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -295,6 +296,55 @@ header {
   width: 23.06em;
   height: 22em;
   background-image: url("../images/Projects/img-placeholder.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  justify-content: center;
+}
+
+.tech-card .icon {
+  order: 0;
+  width: 5em;
+  min-width: 5em;
+  max-width: 5em;
+  height: 5em;
+  min-height: 5em;
+  max-height: 5em;
+  margin-bottom: 2em;
+  border-radius: 50%;
+}
+
+.tech-card .title {
+  order: 1;
+  margin-bottom: 1em;
+}
+
+.tech-card .tags {
+  order:2;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+}
+
+.tech-card .tag {
+  color: #36b37e;
+  background: #fff;
+}
+
+.tech-card .lang{
+  background-image: url("../images/Icons/icon-languages.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.tech-card .frame{
+  background-image: url("../images/Icons/icon-frameworks.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.tech-card .skills{
+  background-image: url("../images/Icons/icon-skills.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
