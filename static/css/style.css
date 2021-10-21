@@ -227,7 +227,6 @@ header {
   border: 1px solid #d0d9d4;
   border-radius: 0.5em;
   padding: 0;
-  border: 2px solid maroon;
 }
 
 .tags {
@@ -245,10 +244,13 @@ header {
   padding: 0.5em 0.75em 0.5em 0.75em;
 }
 
-.project-card .tags { 
+.project-card .tags {
   margin-bottom: 1em;
   column-gap: 0.5em;
   row-gap: 0.5em;
+  height: 5%;
+  min-height: 5%;
+  max-height: 5%;
 }
 
 .project-card .tag { background: #ebf0ee; }
@@ -269,18 +271,11 @@ header {
   margin-bottom: 0.5em;
 }
 
-.project-card .tags {
-  height: 5%;
-  min-height: 5%;
-  max-height: 5%;
-}
-
 .project-card .button-container {
   height: 15%;
   min-height: 15%;
   max-height: 15%;
 }
-
 
 #about-me {
   order: 2;
