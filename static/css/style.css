@@ -29,9 +29,7 @@ h1 {
 
 h1 .highlight { color: #36b37e; }
 
-h2 {
-  font-weight: bold;
-}
+h2 { font-weight: bold; }
 
 p {
   font-weight: normal;
@@ -41,7 +39,7 @@ p {
   color: #172b4d;
 }
 
-button{
+button {
   padding: 0.75em;
   background: #36b37f;
   color: #fff;
@@ -56,15 +54,11 @@ button{
   min-height: 3em;
 }
 
-button:hover{
-  box-shadow: 0em 0.5em 1em rgba(54, 179, 127, 0.24);
-}
+button:hover { box-shadow: 0em 0.5em 1em rgba(54, 179, 127, 0.24); }
 
-button:active{
-  background-color: #008552;
-}
+button:active { background-color: #008552; }
 
-.button-container{
+.button-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -110,7 +104,6 @@ header {
   z-index: 500;
 }
 
-
 .nav-mobile {
   display: none;
 }
@@ -140,7 +133,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 
 #headline {
   order: 0;
@@ -208,9 +200,7 @@ header {
   padding-right: 5em;
 }
 
-#works {
-  order: 1;
-}
+#works { order: 1; }
 
 .projects,
 .technologies {
@@ -223,13 +213,9 @@ header {
   row-gap: 3em;
 }
 
-.projects {
-  order: 1;
-}
+.projects { order: 1; }
 
-.technologies {
-  order: 4;
-}
+.technologies { order: 4; }
 
 .project-card,
 .tech-card {
@@ -243,7 +229,7 @@ header {
   padding: 0;
 }
 
-.project-card img{
+.project-card img {
   width: 100%;
   height: 45%;
   min-height: 45%;
@@ -252,19 +238,19 @@ header {
   margin-bottom: 0.5em;
 }
 
-.project-card .title{
+.project-card .title {
   height: 15%;
   min-height: 15%;
   max-height: 15%;
   margin-bottom: 0.5em;
 }
 
-.project-card .tags{
+.project-card .tags {
   height: 5%;
   min-height: 5%;
   max-height: 5%;
 }
-.project-card .button-container{
+.project-card .button-container {
   height: 15%;
   min-height: 15%;
   max-height: 15%;
@@ -286,14 +272,15 @@ header {
 
 #about-me {
   order: 2;
+  background-image: url("../images/Background/about-me.png");
+  background-repeat: no-repeat;
 }
 
-#about-me .button-container{
+#about-me .button-container {
   order: 3;
 }
 
-.tech-card{
-  width: 23.06em;
+.tech-card {
   height: 22em;
   background-image: url("../images/Projects/img-placeholder.png");
   background-repeat: no-repeat;
@@ -311,7 +298,17 @@ header {
   max-height: 5em;
   margin-bottom: 2em;
   border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  background-position: 50% 50%;
 }
+
+.tech-card .lang { background-image: url("../images/Icons/icon-languages.png"); }
+
+.tech-card .frame { background-image: url("../images/Icons/icon-frameworks.png"); }
+
+.tech-card .skills { background-image: url("../images/Icons/icon-skills.png"); }
 
 .tech-card .title {
   order: 1;
@@ -331,25 +328,7 @@ header {
   background: #fff;
 }
 
-.tech-card .lang{
-  background-image: url("../images/Icons/icon-languages.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.tech-card .frame{
-  background-image: url("../images/Icons/icon-frameworks.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.tech-card .skills{
-  background-image: url("../images/Icons/icon-skills.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 746px) {
   .nav-pc {
     display: none;
   }
@@ -372,6 +351,10 @@ header {
   #about-me {
     padding-left: 2em;
     padding-right: 2em;
+  }
+
+  #about-me {
+    background-image: url("../images/Background/about-me-mobile.png");
   }
 
   .projects,
