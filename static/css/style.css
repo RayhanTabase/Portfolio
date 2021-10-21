@@ -7,22 +7,31 @@
 }
 
 h1,
+h2,
 p {
   font-family: Inter, sans-serif;
   font-style: normal;
 }
 
-h1 {
+h1,
+h2 {
   position: static;
+  text-align: center;
+  color: #172b4d;
+  letter-spacing: 0.37px;
+}
+
+h1 {
   font-weight: 800;
   font-size: 3rem;
   line-height: 3.75rem;
-  text-align: center;
-  letter-spacing: 0.37px;
-  color: #172b4d;
 }
 
 h1 .highlight { color: #36b37e; }
+
+h2 {
+  font-weight: bold;
+}
 
 p {
   font-weight: normal;
@@ -30,6 +39,37 @@ p {
   line-height: 2rem;
   text-align: center;
   color: #172b4d;
+}
+
+button{
+  padding: 0.75em;
+  background: #36b37f;
+  color: #fff;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0;
+  border-radius: 0.25em;
+  min-width: 9.93em;
+  min-height: 3em;
+}
+
+button:hover{
+  box-shadow: 0em 0.5em 1em rgba(54, 179, 127, 0.24);
+}
+
+button:active{
+  background-color: #008552;
+}
+
+.button-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
 }
 
 header {
@@ -83,16 +123,21 @@ ul li a {
   font-weight: 600;
 }
 
-main { background: #fff; }
+main {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
 
 main section {
   padding: 4em 1.5em 4em 1.5em;
-  position: absolute;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
 }
 
 #headline {
+  order: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +199,30 @@ main section {
   background: none;
 }
 
+
+
+#works {
+  order: 1;
+}
+
+.projects,
+.technologies {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.project-card,
+.tech-card {
+  min-width: 200px;
+  background-color: #36b37e;
+  margin: 2em 2em 2em 2em;
+}
+
+#about-me {
+  order: 2;
+}
+
+
 @media only screen and (max-width: 600px) {
   .nav-pc {
     display: none;
@@ -171,5 +240,10 @@ main section {
   #headline {
     margin-top: 4em;
     background-image: url("../images/Background/headline-mobile.png");
+  }
+
+  .projects,
+  .technologies {
+    grid-template-columns: auto;
   }
 }
