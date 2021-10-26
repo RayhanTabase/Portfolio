@@ -8,7 +8,9 @@
 
 h1,
 h2,
-p {
+p,
+textarea,
+input {
   font-family: Inter, sans-serif;
   font-style: normal;
 }
@@ -385,6 +387,7 @@ input {
 textarea {
   width: 100%;
   border: 1px solid #60c095;
+  padding: 1em;
 }
 
 textarea {
@@ -397,18 +400,11 @@ textarea:focus {
   outline: none;
 }
 
-#contact input::placeholder {
-  padding: 1em;
-}
-
-#contact textarea {
-  padding: 1em;
-}
-
 textarea::placeholder {
-  font-weight: 700;
+  font-weight: normal;
   color: #172b4d;
   font-size: 1rem;
+  line-height: 1.5em;
 }
 
 #contact form .button-container {
