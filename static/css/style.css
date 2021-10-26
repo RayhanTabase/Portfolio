@@ -68,7 +68,7 @@ button:active { background-color: #008552; }
   margin-top: 2em;
 }
 
-ul { display: flex; }
+/* ul { display: flex; } */
 
 ul li {
   list-style: none;
@@ -205,8 +205,7 @@ header {
 
 #works { order: 1; }
 
-.projects,
-.technologies {
+.projects {
   margin-top: 3em;
   width: 100%;
   display: grid;
@@ -346,10 +345,10 @@ header {
     display: block;
   }
 
-  ul {
+  /* ul {
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
   #headline {
     margin-top: 4em;
@@ -366,9 +365,21 @@ header {
     background-image: url("../images/Background/about-me-mobile.png");
   }
 
-  .projects,
-  .technologies {
+  .projects {
     display: grid;
     grid-template-columns: 100%;
   }
+}
+
+.technologies {
+  display: block;
+  overflow: hidden;
+  margin: 2em;
+}
+
+.tech-card {
+  float:left;
+  margin-right: 2em;
+  width: calc(33.33% - 2em);
+  height: 352px;
 }
