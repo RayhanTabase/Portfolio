@@ -387,14 +387,14 @@ textarea {
   border: 1px solid #60c095;
 }
 
+textarea {
+  height: 7.125em;
+}
+
 #contact form ul li input:focus,
 textarea:focus {
   box-shadow: 0 0 20px #60c095;
   outline: none;
-}
-
-textarea {
-  height: 7.125em;
 }
 
 #contact input::placeholder {
