@@ -378,11 +378,19 @@ header {
 
 input {
   height: 3em;
+  padding: 0.6em;
 }
 
 #contact form ul li input,
 textarea {
   width: 100%;
+  border: 1px solid #60c095;
+}
+
+#contact form ul li input:focus,
+textarea:focus {
+  box-shadow: 0 0 20px #60c095;
+  outline: none;
 }
 
 textarea {
