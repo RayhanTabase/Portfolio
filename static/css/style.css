@@ -8,7 +8,9 @@
 
 h1,
 h2,
-p {
+p,
+textarea,
+input {
   font-family: Inter, sans-serif;
   font-style: normal;
 }
@@ -146,7 +148,6 @@ header {
 
 .primary-text {
   order: 0;
-  position: static;
   margin-top: 1.5em;
 }
 
@@ -337,7 +338,89 @@ header {
   background: #fff;
 }
 
+#contact {
+  order: 3;
+  flex-direction: row;
+  padding-left: 5em;
+  padding-right: 5em;
+  overflow: hidden;
+}
+
+#contact .primary-text {
+  height: 16em;
+  max-height: 16em;
+  width: 40%;
+  margin: 0;
+  align-self: flex-start;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  margin-right: 1.5em;
+}
+
+#contact .primary-text h2 {
+  font-size: 1.875rem;
+  line-height: 3rem;
+}
+
+#contact form {
+  order: 1;
+  width: calc(60% - 1.5em);
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+#contact form ul {
+  display: grid;
+  height: 16em;
+  max-height: 16em;
+}
+
+input {
+  height: 3em;
+  padding: 0.6em;
+}
+
+#contact form ul li input,
+textarea {
+  width: 100%;
+  border: 1px solid #60c095;
+  padding: 1em;
+}
+
+textarea {
+  height: 7.125em;
+}
+
+#contact form ul li input:focus,
+textarea:focus {
+  box-shadow: 0 0 20px #60c095;
+  outline: none;
+}
+
+textarea::placeholder {
+  font-weight: normal;
+  color: #172b4d;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+#contact form .button-container {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.62em 0.75em 0.62em 0.72em;
+}
+
 @media only screen and (max-width: 746px) {
+  h1,
+  h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+
   .nav-pc {
     display: none;
   }
@@ -357,7 +440,8 @@ header {
   }
 
   #works,
-  #about-me {
+  #about-me,
+  #contact {
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -370,5 +454,36 @@ header {
   .technologies {
     display: grid;
     grid-template-columns: 100%;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact .primary-text {
+    align-self: center;
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3em;
+  }
+
+  #contact form {
+    order: 1;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #contact form ul {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    height: 100%;
+  }
+
+  #contact form ul li {
+    width: 100%;
   }
 }
