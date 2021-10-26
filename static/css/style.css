@@ -364,25 +364,25 @@ header {
 #contact form {
   order: 1;
   width: calc(60% - 1.5em);
-  justify-self:flex-end;
+  justify-self: flex-end;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
 }
 
-#contact form  ul {
+#contact form ul {
   display: grid;
   height: 16em;
   max-height: 16em;
 }
 
-#contact form  ul li input,
-textarea {
-  width: 100%;
-}
-
 input {
   height: 3em;
+}
+
+#contact form ul li input,
+textarea {
+  width: 100%;
 }
 
 textarea {
@@ -403,14 +403,13 @@ textarea::placeholder {
   font-size: 1rem;
 }
 
-form .button-container {
+#contact form .button-container {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0.62em 0.75em 0.62em 0.72em;
 }
 
 @media only screen and (max-width: 746px) {
-  
   h1,
   h2 {
     font-weight: 700;
@@ -469,18 +468,18 @@ form .button-container {
   #contact form {
     order: 1;
     width: 100%;
-    justify-self:center;
+    justify-self: center;
     align-self: center;
   }
 
-  #contact form  ul {
+  #contact form ul {
     display: flex;
     flex-direction: column;
     max-height: none;
     height: 100%;
   }
 
-  #contact form  ul li {
+  #contact form ul li {
     width: 100%;
   }
 }
