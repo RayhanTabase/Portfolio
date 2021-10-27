@@ -359,6 +359,7 @@ input {
 #contact form ul li input,
 textarea {
   width: 100%;
+  min-width: 100%;
   border: 1px solid #60c095;
   padding: 1em;
 }
