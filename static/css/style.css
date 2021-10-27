@@ -382,3 +382,73 @@ textarea::placeholder {
   justify-content: flex-start;
   padding: 0.62em 0.75em 0.62em 0.72em;
 }
+
+@media only screen and (min-width: 760px) {
+  h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  h2 { font-weight: bold; }
+
+  .nav-pc {
+    display: flex;
+    width: 100%;
+    height: 4.5em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  #headline {
+    background-image: url("../images/Background/headline.png");
+    background-size: 100% 100%;
+  }
+
+  #works,
+  #about-me,
+  #contact {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .projects,
+  .technologies {
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5em;
+  }
+
+  #about-me { background-image: url("../images/Background/about-me.png"); }
+
+  #contact {
+    flex-direction: row;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  #contact .primary-text {
+    height: 16em;
+    max-height: 16em;
+    width: 40%;
+    margin: 0;
+    align-self: flex-start;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-right: 1.5em;
+    flex-wrap: wrap;
+  }
+
+  #contact form {
+    width: calc(60% - 1.5em);
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}
