@@ -24,15 +24,14 @@ h3 {
   letter-spacing: 0.37px;
 }
 
-h1 {
-  font-weight: 800;
-  font-size: 3rem;
-  line-height: 3.75rem;
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
 }
 
 h1 .highlight { color: #36b37e; }
-
-h2 { font-weight: bold; }
 
 p {
   font-weight: normal;
@@ -70,7 +69,11 @@ button:active { background-color: #008552; }
   margin-top: 2em;
 }
 
-ul { display: flex; }
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 ul li {
   list-style: none;
@@ -108,7 +111,7 @@ header {
   z-index: 500;
 }
 
-.nav-mobile {
+.nav-pc {
   display: none;
 }
 
@@ -130,18 +133,11 @@ header {
 
 .menu-icon { padding: 0.5em; }
 
-.nav-pc {
-  width: 100%;
-  height: 4.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #headline {
   order: 0;
   padding-top: 10em;
-  background-image: url("../images/Background/headline.png");
+  margin-top: 4em;
+  background-image: url("../images/Background/headline-mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -157,20 +153,7 @@ header {
 }
 
 .social-media {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  justify-content: center;
-  position: static;
-  width: 200px;
-  height: 40px;
-  left: 360px;
-  top: 418px;
-  flex: none;
   order: 2;
-  flex-grow: 0;
-  margin-top: 24px;
 }
 
 .social-media a {
@@ -179,14 +162,13 @@ header {
 }
 
 .action {
+  order: 3;
   display: flex;
-  position: static;
   width: 100%;
   height: 114px;
   align-items: center;
   justify-content: center;
   flex: none;
-  order: 3;
   margin-top: 24px;
 }
 
@@ -199,9 +181,10 @@ header {
 .action button:hover { box-shadow: none; }
 
 #works,
-#about-me {
-  padding-left: 5em;
-  padding-right: 5em;
+#about-me,
+#contact {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 #works { order: 1; }
@@ -211,9 +194,7 @@ header {
   margin-top: 3em;
   width: 100%;
   display: grid;
-  justify-content: space-evenly;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 1.5em;
+  grid-template-columns: 100%;
   row-gap: 3em;
 }
 
@@ -283,13 +264,11 @@ header {
 
 #about-me {
   order: 2;
-  background-image: url("../images/Background/about-me.png");
+  background-image: url("../images/Background/about-me-mobile.png");
   background-repeat: no-repeat;
 }
 
-#about-me .button-container {
-  order: 3;
-}
+#about-me .button-container { order: 3; }
 
 .tech-card {
   height: 22em;
@@ -340,22 +319,13 @@ header {
 
 #contact {
   order: 3;
-  flex-direction: row;
-  padding-left: 5em;
-  padding-right: 5em;
-  overflow: hidden;
 }
 
 #contact .primary-text {
-  height: 16em;
-  max-height: 16em;
-  width: 40%;
-  margin: 0;
-  align-self: flex-start;
-  display: flex;
-  justify-content: stretch;
-  align-items: center;
-  margin-right: 1.5em;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3em;
 }
 
 #contact .primary-text h2 {
@@ -365,17 +335,17 @@ header {
 
 #contact form {
   order: 1;
-  width: calc(60% - 1.5em);
-  justify-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
 }
 
 #contact form ul {
-  display: grid;
-  height: 16em;
-  max-height: 16em;
+  display: block;
+}
+
+#contact form ul li {
+  width: 100%;
 }
 
 input {
@@ -413,77 +383,72 @@ textarea::placeholder {
   padding: 0.62em 0.75em 0.62em 0.72em;
 }
 
-@media only screen and (max-width: 746px) {
-  h1,
-  h2 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.25rem;
+@media only screen and (min-width: 760px) {
+  h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
+
+  h2 { font-weight: bold; }
 
   .nav-pc {
-    display: none;
-  }
-
-  .nav-mobile {
-    display: block;
-  }
-
-  ul {
-    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 4.5em;
+    justify-content: center;
     align-items: center;
   }
 
+  .nav-mobile {
+    display: none;
+  }
+
   #headline {
-    margin-top: 4em;
-    background-image: url("../images/Background/headline-mobile.png");
+    background-image: url("../images/Background/headline.png");
+    background-size: 100% 100%;
   }
 
   #works,
   #about-me,
   #contact {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
-  #about-me {
-    background-image: url("../images/Background/about-me-mobile.png");
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   .projects,
   .technologies {
-    display: grid;
-    grid-template-columns: 100%;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5em;
   }
 
+  #about-me { background-image: url("../images/Background/about-me.png"); }
+
   #contact {
-    flex-direction: column;
+    flex-direction: row;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   #contact .primary-text {
-    align-self: center;
-    max-height: none;
-    height: 100%;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 3em;
+    height: 16em;
+    max-height: 16em;
+    width: 40%;
+    margin: 0;
+    align-self: flex-start;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-right: 1.5em;
+    flex-wrap: wrap;
   }
 
   #contact form {
-    order: 1;
-    width: 100%;
-    justify-self: center;
-    align-self: center;
-  }
-
-  #contact form ul {
+    width: calc(60% - 1.5em);
+    justify-self: flex-end;
     display: flex;
     flex-direction: column;
-    max-height: none;
-    height: 100%;
-  }
-
-  #contact form ul li {
-    width: 100%;
+    align-self: flex-start;
   }
 }
