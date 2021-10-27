@@ -26,7 +26,7 @@ h3 {
 
 h1,
 h2 {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 2.5rem;
   line-height: 3.25rem;
 }
@@ -189,6 +189,22 @@ header {
 
 #works { order: 1; }
 
+#works .primary-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#works .primary-text::after {
+  content: "";
+  background: #36b37e;
+  width: 2.5em;
+  height: .3em;
+  border-radius: 0.2em;
+  margin-top: 1em;
+}
+
 .projects,
 .technologies {
   margin-top: 3em;
@@ -212,6 +228,7 @@ header {
   border: 1px solid #d0d9d4;
   border-radius: 0.5em;
   padding: 0;
+  overflow: hidden;
 }
 
 .tags {
@@ -361,6 +378,7 @@ textarea {
   width: 100%;
   min-width: 100%;
   border: 1px solid #60c095;
+  border-radius: 0.3em;
   padding: 1em;
 }
 
@@ -381,6 +399,14 @@ textarea::placeholder {
   line-height: 1.5em;
 }
 
+footer{
+  order: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #dfe1e6;
+}
+
 @media only screen and (min-width: 760px) {
   h1 {
     font-weight: 800;
@@ -388,7 +414,7 @@ textarea::placeholder {
     line-height: 3.75rem;
   }
 
-  h2 { font-weight: bold; }
+  h2 { font-weight: 700; }
 
   .nav-pc {
     display: flex;
@@ -410,8 +436,17 @@ textarea::placeholder {
   #works,
   #about-me,
   #contact {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  #works .primary-text {
+    display: block;
+  }
+  
+  #works .primary-text::after {
+    content: "";
+    background: none;
   }
 
   .projects,
@@ -431,13 +466,11 @@ textarea::placeholder {
 
   #contact {
     flex-direction: row;
-    padding-left: 5em;
-    padding-right: 5em;
     background-image: url("../images/Background/contact/conatct-left.png"), url("../images/Background/contact/conatct-middle.png"), url("../images/Background/contact/conatct-right.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 14.7em 16.37em, 6.56em 4.3em, 19.62em 28.05em;
+    background-size: 14.7em 26.37em, 6.56em 6.8em, 19.62em 38.05em;
     background-position-x: 0, 30%, 100%;
-    background-position-y: 70%, 70%, 50%;
+    background-position-y: 75%, 70%, 65%;
   }
   
   #contact .primary-text {
@@ -459,5 +492,5 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-  }
+  }  
 }
