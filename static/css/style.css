@@ -111,9 +111,7 @@ header {
   z-index: 500;
 }
 
-.nav-pc {
-  display: none;
-}
+.nav-pc { display: none; }
 
 .welcome-text {
   width: 5.625em;
@@ -152,9 +150,7 @@ header {
   margin-top: 1.5em;
 }
 
-.social-media {
-  order: 2;
-}
+.social-media { order: 2; }
 
 .social-media a {
   padding: 8px;
@@ -200,7 +196,7 @@ header {
   content: "";
   background: #36b37e;
   width: 2.5em;
-  height: .3em;
+  height: 0.3em;
   border-radius: 0.2em;
   margin-top: 1em;
 }
@@ -284,8 +280,8 @@ header {
   background-image: url("../images/Background/about/about-left-mobile.png"), url("../images/Background/about/about-right-mobile.png");
   background-size: 5em 3.56em, 7em 6em;
   background-repeat: no-repeat, no-repeat;
-  background-position-y: 24em ,2em; 
-  background-position-x: 0 ,105%; 
+  background-position-y: 24em, 2em;
+  background-position-x: 0, 105%;
 }
 
 #about-me .button-container { order: 3; }
@@ -341,7 +337,7 @@ header {
   order: 3;
   background-image: url("../images/Background/contact/mobile-right.png");
   background-size: 5.7em 8.23em;
-  background-position: bottom right; 
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
 
@@ -356,17 +352,11 @@ header {
   line-height: 3rem;
 }
 
-#contact form {
-  width: 100%;
-}
+#contact form { width: 100%; }
 
-#contact form ul {
-  display: block;
-}
+#contact form ul { display: block; }
 
-#contact form ul li {
-  width: 100%;
-}
+#contact form ul li { width: 100%; }
 
 input {
   height: 3em;
@@ -382,9 +372,7 @@ textarea {
   padding: 1em;
 }
 
-textarea {
-  height: 7.125em;
-}
+textarea { height: 7.125em; }
 
 #contact form ul li input:focus,
 textarea:focus {
@@ -399,7 +387,7 @@ textarea::placeholder {
   line-height: 1.5em;
 }
 
-footer{
+footer {
   order: 6;
   display: flex;
   justify-content: center;
@@ -424,9 +412,7 @@ footer{
     align-items: center;
   }
 
-  .nav-mobile {
-    display: none;
-  }
+  .nav-mobile { display: none; }
 
   #headline {
     background-image: url("../images/Background/headline/headline.png");
@@ -440,10 +426,8 @@ footer{
     padding-right: 10em;
   }
 
-  #works .primary-text {
-    display: block;
-  }
-  
+  #works .primary-text { display: block; }
+
   #works .primary-text::after {
     content: "";
     background: none;
@@ -460,8 +444,8 @@ footer{
     background-image: url("../images/Background/about/about-left.png"), url("../images/Background/about/about-right.png");
     background-size: 18em 8.1em, 17.06em 15.31em;
     background-repeat: no-repeat, no-repeat;
-    background-position-y: 10em ,0; 
-    background-position-x: 0 ,100%; 
+    background-position-y: 10em, 0;
+    background-position-x: 0, 100%;
   }
 
   #contact {
@@ -472,7 +456,7 @@ footer{
     background-position-x: 0, 30%, 100%;
     background-position-y: 75%, 70%, 65%;
   }
-  
+
   #contact .primary-text {
     height: 16em;
     max-height: 16em;
@@ -492,5 +476,5 @@ footer{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-  }  
+  }
 }
