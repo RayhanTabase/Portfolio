@@ -383,7 +383,7 @@ textarea::placeholder {
   padding: 0.62em 0.75em 0.62em 0.72em;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 992px) {
   h1 {
     font-weight: 800;
     font-size: 3rem;
