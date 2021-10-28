@@ -9,12 +9,7 @@ Additional description about the project and its features.
 ## Built With
 
 - HTML,CSS
-
-## Getting Started
-
-**Personal Portfolio page**
-
-
+- 
 ## Authors
 
 👤 **Salim Abdulai**
