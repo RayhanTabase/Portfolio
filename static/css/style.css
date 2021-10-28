@@ -395,7 +395,7 @@ footer {
   border-top: 1px solid #dfe1e6;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 992px) {
   h1 {
     font-weight: 800;
     font-size: 3rem;
@@ -477,4 +477,8 @@ footer {
     flex-direction: column;
     align-self: flex-start;
   }
+}
+
+.social-media li:hover {
+
 }
