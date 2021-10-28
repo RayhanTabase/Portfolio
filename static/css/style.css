@@ -477,13 +477,12 @@ footer {
     flex-direction: column;
     align-self: flex-start;
   }
-}
 
-.social-media li:hover {
+  .social-media li:hover {
+    transform: scale(1.25);
+  }
 
-}
-
-.project-card,
-.tech-card {
-
+  .project-card:hover {
+    transform: scale(1.1);
+  }
 }
