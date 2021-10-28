@@ -26,7 +26,7 @@ h3 {
 
 h1,
 h2 {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 2.5rem;
   line-height: 3.25rem;
 }
@@ -111,9 +111,7 @@ header {
   z-index: 500;
 }
 
-.nav-pc {
-  display: none;
-}
+.nav-pc { display: none; }
 
 .welcome-text {
   width: 5.625em;
@@ -137,7 +135,7 @@ header {
   order: 0;
   padding-top: 10em;
   margin-top: 4em;
-  background-image: url("../images/Background/headline-mobile.png");
+  background-image: url("../images/Background/headline/headline-mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -152,9 +150,7 @@ header {
   margin-top: 1.5em;
 }
 
-.social-media {
-  order: 2;
-}
+.social-media { order: 2; }
 
 .social-media a {
   padding: 8px;
@@ -189,6 +185,22 @@ header {
 
 #works { order: 1; }
 
+#works .primary-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#works .primary-text::after {
+  content: "";
+  background: #36b37e;
+  width: 2.5em;
+  height: 0.3em;
+  border-radius: 0.2em;
+  margin-top: 1em;
+}
+
 .projects,
 .technologies {
   margin-top: 3em;
@@ -212,6 +224,7 @@ header {
   border: 1px solid #d0d9d4;
   border-radius: 0.5em;
   padding: 0;
+  overflow: hidden;
 }
 
 .tags {
@@ -264,8 +277,11 @@ header {
 
 #about-me {
   order: 2;
-  background-image: url("../images/Background/about-me-mobile.png");
-  background-repeat: no-repeat;
+  background-image: url("../images/Background/about/about-left-mobile.png"), url("../images/Background/about/about-right-mobile.png");
+  background-size: 5em 3.56em, 7em 6em;
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: 24em, 2em;
+  background-position-x: 0, 105%;
 }
 
 #about-me .button-container { order: 3; }
@@ -319,10 +335,13 @@ header {
 
 #contact {
   order: 3;
+  background-image: url("../images/Background/contact/mobile-right.png");
+  background-size: 5.7em 8.23em;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 #contact .primary-text {
-  align-self: center;
   height: 100%;
   width: 100%;
   margin-bottom: 3em;
@@ -333,20 +352,11 @@ header {
   line-height: 3rem;
 }
 
-#contact form {
-  order: 1;
-  width: 100%;
-  justify-self: center;
-  align-self: center;
-}
+#contact form { width: 100%; }
 
-#contact form ul {
-  display: block;
-}
+#contact form ul { display: block; }
 
-#contact form ul li {
-  width: 100%;
-}
+#contact form ul li { width: 100%; }
 
 input {
   height: 3em;
@@ -356,13 +366,13 @@ input {
 #contact form ul li input,
 textarea {
   width: 100%;
+  min-width: 100%;
   border: 1px solid #60c095;
+  border-radius: 0.3em;
   padding: 1em;
 }
 
-textarea {
-  height: 7.125em;
-}
+textarea { height: 7.125em; }
 
 #contact form ul li input:focus,
 textarea:focus {
@@ -377,10 +387,12 @@ textarea::placeholder {
   line-height: 1.5em;
 }
 
-#contact form .button-container {
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.62em 0.75em 0.62em 0.72em;
+footer {
+  order: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #dfe1e6;
 }
 
 @media only screen and (min-width: 992px) {
@@ -390,7 +402,7 @@ textarea::placeholder {
     line-height: 3.75rem;
   }
 
-  h2 { font-weight: bold; }
+  h2 { font-weight: 700; }
 
   .nav-pc {
     display: flex;
@@ -400,20 +412,25 @@ textarea::placeholder {
     align-items: center;
   }
 
-  .nav-mobile {
-    display: none;
-  }
+  .nav-mobile { display: none; }
 
   #headline {
-    background-image: url("../images/Background/headline.png");
+    background-image: url("../images/Background/headline/headline.png");
     background-size: 100% 100%;
   }
 
   #works,
   #about-me,
   #contact {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  #works .primary-text { display: block; }
+
+  #works .primary-text::after {
+    content: "";
+    background: none;
   }
 
   .projects,
@@ -423,12 +440,21 @@ textarea::placeholder {
     column-gap: 1.5em;
   }
 
-  #about-me { background-image: url("../images/Background/about-me.png"); }
+  #about-me {
+    background-image: url("../images/Background/about/about-left.png"), url("../images/Background/about/about-right.png");
+    background-size: 18em 8.1em, 17.06em 15.31em;
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 10em, 0;
+    background-position-x: 0, 100%;
+  }
 
   #contact {
     flex-direction: row;
-    padding-left: 5em;
-    padding-right: 5em;
+    background-image: url("../images/Background/contact/conatct-left.png"), url("../images/Background/contact/conatct-middle.png"), url("../images/Background/contact/conatct-right.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 14.7em 26.37em, 6.56em 6.8em, 19.62em 38.05em;
+    background-position-x: 0, 30%, 100%;
+    background-position-y: 75%, 70%, 65%;
   }
 
   #contact .primary-text {
