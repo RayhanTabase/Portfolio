@@ -480,7 +480,7 @@ footer {
 }
 
 .social-media li:hover {
-
+  transform: scale(1.25);
 }
 
 .project-card,
