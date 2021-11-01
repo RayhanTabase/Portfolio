@@ -479,13 +479,9 @@ footer {
     align-self: flex-start;
   }
 
-  .social-media li {
-    transition: 1s;
-  }
+  .social-media li { transition: 1s; }
 
-  .social-media li:hover {
-    transform: scale(1.25);
-  }
+  .social-media li:hover { transform: scale(1.25); }
 
   .project-card:hover,
   .tech-card:hover {

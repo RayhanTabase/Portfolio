@@ -10,6 +10,10 @@ Additional description about the project and its features.
 
 - HTML,CSS
 
+## Live Demo
+
+[Live Demo Link](https://rayhantabase.github.io/Portfolio/)
+
 ## Authors
 
 👤 **Salim Abdulai**
