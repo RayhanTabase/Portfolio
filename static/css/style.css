@@ -115,6 +115,10 @@ ul li a {
   border-bottom-right-radius: 2em ;
 }
 
+.navbar .nav-links.open{
+  display: flex
+}
+
 .navbar .nav-links .menu-close {
   align-self: flex-end;
   width: 2.5em;
