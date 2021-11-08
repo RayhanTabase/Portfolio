@@ -1,15 +1,11 @@
+const menu = document.querySelector('.menu-icon-open');
+const close = document.querySelector('.menu-icon-close');
+const navLinks = document.querySelector('.navbar .nav-links');
 
-document.addEventListener('DOMContentLoaded', function(){
-  
-  document.getElementById('contact').scrollIntoView()
-  m()
+menu.addEventListener('click', e => {
+  navLinks.classList.add('open')
+})
 
-  document.querySelector("")
-
-});
-
-function m(){
-  const a = document.querySelector("#contact")
-  console.log(a)
-  a.scrollIntoView({behavior: 'smooth'})
-}
+close.addEventListener('click', e => {
+  navLinks.classList.remove('open')
+})
