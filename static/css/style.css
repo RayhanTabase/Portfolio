@@ -10,7 +10,8 @@ h1,
 h2,
 p,
 textarea,
-input {
+input,
+ul li a {
   font-family: Inter, sans-serif;
   font-style: normal;
 }
@@ -41,7 +42,7 @@ p {
   color: #172b4d;
 }
 
-button {
+.button-primary {
   padding: 0.75em;
   background: #36b37f;
   color: #fff;
@@ -57,9 +58,14 @@ button {
   cursor: pointer;
 }
 
-button:hover { box-shadow: 5px 0.5em 1em rgba(54, 179, 127, 0.24); }
+.button-primary:hover { box-shadow: 5px 0.5em 1em rgba(54, 179, 127, 0.24); }
 
-button:active { background-color: #008552; }
+.button-primary:active { background-color: #008552; }
+
+.button-clear {
+  background: none;
+  border: none;
+}
 
 .button-container {
   width: 100%;
@@ -83,15 +89,42 @@ ul li {
 }
 
 ul li a {
-  color: #344563;
+  color: #28352f;
   text-decoration: none;
   font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.37px;
 }
 
 .navbar {
   width: 100%;
   height: 4.5em;
 }
+
+.navbar .nav-links {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 1em;
+  padding: 0.6em;
+  height: 500px;
+  background: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+  border-bottom-left-radius: 2em ;
+  border-bottom-right-radius: 2em ;
+}
+
+.navbar .nav-links .menu-close {
+  align-self: flex-end;
+  width: 2.5em;
+  max-width: 2.5em;
+  height: 2.5em;
+  max-height: 2.5em;
+  min-width: 2.5em;
+  min-height: 2.5em;
+}
+
 
 main {
   background: #fff;
@@ -114,10 +147,6 @@ header {
   width: 100%;
   position: fixed;
   z-index: 500;
-}
-
-.navbar .nav-links {
-  display: none;
 }
 
 .welcome-text {
@@ -176,12 +205,8 @@ header {
 }
 
 .action button {
-  border: none;
-  background: none;
   min-width: 10px;
 }
-
-.action button:hover { box-shadow: none; }
 
 #works,
 #about-me,
@@ -417,11 +442,12 @@ footer {
   }
 
   .navbar .nav-links {
-    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
 
   #headline {
