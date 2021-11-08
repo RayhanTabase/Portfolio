@@ -96,6 +96,26 @@ ul li a {
   letter-spacing: 0.37px;
 }
 
+.drop-down {
+  animation-name: drop-down;
+  animation-duration: 1.3s;
+}
+
+@keyframes drop-down{
+  from { opacity: 0; }
+  to { opacity:1; }
+}
+
+.drop-up {
+  animation-name: drop-up;
+  animation-duration: 1.3s;
+}
+
+@keyframes drop-up{
+  from { opacity: 1; }
+  to { opacity:0; }
+}
+
 .navbar {
   width: 100%;
   height: 4.5em;
@@ -108,16 +128,13 @@ ul li a {
   align-items: baseline;
   gap: 1em;
   padding: 0.6em;
-  height: 500px;
+  height: 100vh;
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.226);
   border-bottom-left-radius: 2em ;
   border-bottom-right-radius: 2em ;
 }
 
-.navbar .nav-links.open{
-  display: flex
-}
 
 .navbar .nav-links .menu-close {
   align-self: flex-end;
@@ -169,8 +186,6 @@ header {
   padding: 0.5em;
 }
 
-.menu-icon { padding: 0.5em; }
-
 #headline {
   order: 0;
   padding-top: 10em;
@@ -208,9 +223,7 @@ header {
   margin-top: 24px;
 }
 
-.action button {
-  min-width: 10px;
-}
+.action button { min-width: 10px; }
 
 #works,
 #about-me,
@@ -441,9 +454,17 @@ footer {
 
   h2 { font-weight: 700; }
 
-  .navbar .nav-mobile {
-    display: none;
+  ul li a {
+    color: #172b4d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.37px;
   }
+
+  .navbar .nav-mobile { display: none; }
+
+  .navbar .nav-links .menu-close { display: none; }
 
   .navbar .nav-links {
     display: flex;
@@ -453,6 +474,8 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0;
+    background:none;
+    border-bottom: none;
   }
 
   #headline {
