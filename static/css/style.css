@@ -101,9 +101,9 @@ ul li a {
   animation-duration: 1.3s;
 }
 
-@keyframes drop-down{
+@keyframes drop-down {
   from { opacity: 0; }
-  to { opacity:1; }
+  to { opacity: 1; }
 }
 
 .drop-up {
@@ -111,9 +111,9 @@ ul li a {
   animation-duration: 1.3s;
 }
 
-@keyframes drop-up{
+@keyframes drop-up {
   from { opacity: 1; }
-  to { opacity:0; }
+  to { opacity: 0; }
 }
 
 .navbar {
@@ -131,10 +131,9 @@ ul li a {
   height: 100vh;
   background: #fff;
   border-bottom: 2px solid rgba(0, 0, 0, 0.226);
-  border-bottom-left-radius: 2em ;
-  border-bottom-right-radius: 2em ;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
-
 
 .navbar .nav-links .menu-close {
   align-self: flex-end;
@@ -145,7 +144,6 @@ ul li a {
   min-width: 2.5em;
   min-height: 2.5em;
 }
-
 
 main {
   background: #fff;
@@ -474,7 +472,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0;
-    background:none;
+    background: none;
     border-bottom: none;
   }
 
