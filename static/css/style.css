@@ -88,6 +88,11 @@ ul li a {
   font-weight: 600;
 }
 
+.navbar {
+  width: 100%;
+  height: 4.5em;
+}
+
 main {
   background: #fff;
   display: flex;
@@ -111,7 +116,9 @@ header {
   z-index: 500;
 }
 
-.nav-pc { display: none; }
+.navbar .nav-links {
+  display: none;
+}
 
 .welcome-text {
   width: 5.625em;
@@ -405,15 +412,17 @@ footer {
 
   h2 { font-weight: 700; }
 
-  .nav-pc {
+  .navbar .nav-mobile {
+    display: none;
+  }
+
+  .navbar .nav-links {
     display: flex;
     width: 100%;
-    height: 4.5em;
+    height: 100%;
     justify-content: center;
     align-items: center;
   }
-
-  .nav-mobile { display: none; }
 
   #headline {
     background-image: url("../images/Background/headline/headline.png");
