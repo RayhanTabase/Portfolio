@@ -16,6 +16,7 @@ const projects = {
 
 
 function showPopUp() {
+  console.log(projects)
   const popUpSection = document.createElement('div')
   popUpSection.classList.add('fullScreen-popUp')
   document.getElementById('portfolio-popUP').appendChild(popUpSection)
