@@ -1,12 +1,14 @@
-// import {
-//   addEvents
-// } from './hamburger.js';
+import {
+  addEvents
+} from './hamburger.js';
 
-// console.log("here")
+import showPopUp from './popUp.js';
 
-// window.addEventListener('resize', () => { window.location.reload(); });
-// if (window.innerWidth < 992) {
-//   addEvents();
-// }
+window.addEventListener('resize', () => { window.location.reload(); });
+if (window.innerWidth < 992) {
+  addEvents();
+}
 
-console.log("here")
+document.querySelectorAll(".see_more").forEach((button) => {
+  button.addEventListener('click', () => showPopUp(button.dataset.id))
+})

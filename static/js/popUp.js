@@ -1,47 +1,33 @@
+import {
+  projects
+} from './projectsList.js';
 
-const projects = [
-  {
-  title1:'Multi-Post Stories',
-  title2: ' Gain+Glory',
-  description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    tags:['Ruby on rails','css','JavScript','html'],
-    image:'./static/images/Projects/img-placeholder.png'
-  },
-  {
-    title1:'Tonic',
-    title2: ' Gain+Glory',
-    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      tags:['Ruby on rails','css','JavScript','html'],
-      image:'./static/images/Projects/img-placeholder.png'
-  },
-  {
-    title1:'Uber Navigation',
-    title2: ' Gain+Glory',
-    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      tags:['Ruby on rails','css','JavScript','html'],
-      image:'./static/images/Projects/img-placeholder.png'
-  },
-  {
-    title1:'Facebook 360',
-    title2: ' Gain+Glory',
-    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      tags:['Ruby on rails','css','JavScript','html'],
-      image:'./static/images/Projects/img-placeholder.png'
-  }
-]
-
-
-
-
-function showPopUp() {
-  console.log(projects)
-  const popUpSection = document.createElement('div')
-  popUpSection.classList.add('fullScreen-popUp')
+export default function showPopUp(id) {
+  const popUpSection = document.createElement('section')
+  popUpSection.id = "fullScreen-popUp"
+  const fullScreenCard = document.createElement('div')
+  fullScreenCard.className = "fullScreen-card"
+  fullScreenCard.innerHTML += `
+    <div id="closePopUp">
+      <button type="button" class="button-clear"><img src="./static/images/Buttons/close.png" alt="close menu image"></button>
+    </div>
+    <h2 class="title">${projects[id].title}</h2>
+    <img class="fullScreenPopUp-image" src=${projects[id].image} alt="${projects[id].title1} image"/>
+    <ul class="tags">
+      ${
+        projects[id].tags.map((tag) => {
+          return(`<li>${tag}</li>`)
+        }).join('')
+      }
+    </ul>
+    <p>${projects[id].description}</p>
+    <div class="button-container">
+      <button class="button-primary" type="button">See Live <img src="./static/images/Buttons/seeLive.png" alt="live version image"></button>
+      <button class="button-primary" type="button">See Source <img src="./static/images/Buttons/github.png" alt="github image"> </button>
+    </div>
+  `
+  popUpSection.appendChild(fullScreenCard)
   document.getElementById('portfolio-popUP').appendChild(popUpSection)
+  document.querySelector("#closePopUp").addEventListener('click', () => popUpSection.remove())
 }
-
-document.querySelectorAll(".see_more").forEach((button) => {
-  button.addEventListener('click', () => showPopUp())
-})
-
 

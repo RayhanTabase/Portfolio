@@ -135,7 +135,7 @@ ul li a {
   border-bottom-right-radius: 2em;
 }
 
-.navbar .nav-links .menu-close {
+.navbar .nav-links .menu-close, #closePopUp {
   align-self: flex-end;
   width: 2.5em;
   max-width: 2.5em;
@@ -443,15 +443,92 @@ footer {
   border-top: 1px solid #dfe1e6;
 }
 
-.fullScreen-popUp {
+#fullScreen-popUp {
   position: fixed;
   z-index: 1000;
   width: 100vw;
   min-width: 100vw;
-  height: 100vh;
   min-height: 100vh;
   background: rgba(0, 0, 0, 0.452);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+  overflow: scroll;
+}
+
+.fullScreen-card {
+  background: #fff;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 96vw;
+  max-height: 96vh;
+  z-index: 20000;
+}
+
+.fullScreen-card .fullScreenPopUp-image {
+  order: 0;
+  height: 13.7em;
+  margin-bottom: 1em;
+}
+
+.fullScreen-card h2 {
+  order: 1;
+  margin-bottom: 1em;
+}
+
+.fullScreen-card .tags {
+  order: 2;
+  display: flex;
+  margin-bottom: 1em;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.fullScreen-card .tags li {
+  order: 2;
+  background: #ebf0ee;
+  color: #3a4a42;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-right: 0.5em;
+}
+
+.fullScreen-card .tags li:nth-last-child() {margin-right: 0;}
+
+.fullScreen-card p {
+  order: 3;
+  height: 15.8em;
+  overflow: scroll;
+  margin-bottom: 1em;
+}
+
+.fullScreen-card .button-container {
+  order: 4;
+  display: flex;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.fullScreen-card .button-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+}
+
+.fullScreen-card .button-container button img {
+  width: 4em;
+  height: 2em;
+  max-width: 3em;
+  max-height: 2em;
 }
 
 @media only screen and (min-width: 992px) {
