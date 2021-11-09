@@ -1,13 +1,12 @@
-window.addEventListener('resize', () => { window.location.reload(); });
-const navMobile = document.querySelector('.nav-mobile');
-const navLinks = document.querySelector('.nav-links');
-function showMenu() {
+export const navMobile = document.querySelector('.nav-mobile');
+export const navLinks = document.querySelector('.nav-links');
+export function showMenu() {
   navMobile.style.display = 'none';
   navLinks.classList.remove('drop-up');
   navLinks.classList.add('drop-down');
   navLinks.style.display = 'flex';
 }
-function hideMenu() {
+export function hideMenu() {
   navLinks.classList.remove('drop-down');
   navLinks.classList.add('drop-up');
   setTimeout(() => {
@@ -15,13 +14,11 @@ function hideMenu() {
     navLinks.style.display = 'none';
   }, 1000);
 }
-function addEvents() {
+export function addEvents() {
   document.querySelector('.menu-open').addEventListener('click', () => showMenu());
   document.querySelector('.menu-close').addEventListener('click', () => hideMenu());
   document.querySelectorAll('.section-link').forEach((link) => {
     link.addEventListener('click', () => hideMenu());
   });
 }
-if (window.innerWidth < 992) {
-  addEvents();
-}
+
