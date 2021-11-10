@@ -16,7 +16,7 @@ export default function showPopUp(id) {
     <ul class="tags">
       ${
         projects[id].tags.map((tag) => {
-          return(`<li>${tag}</li>`)
+          return(`<li class="tag">${tag}</li>`)
         }).join('')
       }
     </ul>
