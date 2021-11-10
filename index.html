@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EVHT7Y19K"></script>
     <script>
@@ -11,15 +14,13 @@
 
     gtag('config', 'G-1EVHT7Y19K');
     </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salim Abdulai| Portfolio | Software Developer</title>
     <link rel="stylesheet" href="./static/css/style.css">
-    <script src="./static/js/index.js" defer></script>
+    <script src="./static/js/index.js" type="module"></script>
 </head>
     
 <body>
+    <div id="portfolio-popUP"></div>
     <header>
         <nav class="navbar">
             <ul class="nav-mobile">
@@ -32,7 +33,7 @@
             </ul>
             <ul class="nav-links">
                 <li class="menu-close">
-                    <button type="button" class="button-clear"><img src="./static/images/Buttons/close.png" alt="down-arrow-image"></button>
+                    <button type="button" class="button-clear"><img src="./static/images/Buttons/close.png" alt="close menu image"></button>
                 </li>
                 <li><a class="section-link" href="#works">Portfolio</a></li>
                 <li><a class="section-link" href="#about-me">About</a></li>
@@ -80,7 +81,7 @@
                         <li class="tag">html</li>
                     </ul>
                     <div class="button-container">
-                        <button class="button-primary" type="button">See More</button>
+                        <button class="button-primary see_more" data-id="0" type="button">See More</button>
                     </div>
                 </li>
                 <li class="project-card">
@@ -93,7 +94,7 @@
                         <li class="tag">html</li>
                     </ul>
                     <div class="button-container">
-                        <button class="button-primary" type="button">See More</button>
+                        <button class="button-primary see_more" data-id="1" type="button">See More</button>
                     </div>
                 </li>
                 <li class="project-card">
@@ -106,7 +107,7 @@
                         <li class="tag">html</li>
                     </ul>
                     <div class="button-container">
-                        <button class="button-primary" type="button">See More</button>
+                        <button class="button-primary see_more" data-id="2" type="button">See More</button>
                     </div>
                 </li>
                 <li class="project-card">
@@ -119,7 +120,7 @@
                         <li class="tag">html</li>
                     </ul>
                     <div class="button-container">
-                        <button class="button-primary" type="button">See More</button>
+                        <button class="button-primary see_more" data-id="3" type="button">See More</button>
                     </div>
                 </li>
                 <li class="project-card">
@@ -132,7 +133,7 @@
                         <li class="tag">html</li>
                     </ul>
                     <div class="button-container">
-                        <button class="button-primary" type="button">See More</button>
+                        <button class="button-primary see_more" data-id="4" type="button">See More</button>
                     </div>
                 </li>
                 <li class="project-card">
@@ -145,7 +146,7 @@
                         <li class="tag">html</li>
                     </ul>
                     <div class="button-container">
-                        <button class="button-primary" type="button">See More</button>
+                        <button class="button-primary see_more" data-id="5" type="button">See More</button>
                     </div>
                 </li>
             </ul>
