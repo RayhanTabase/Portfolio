@@ -17,4 +17,4 @@ function main() {
   document.querySelector('input[name="email"]').addEventListener('input', removeErrorMessage);
 }
 
-window.onload = main();
+window.onload = main;
