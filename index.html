@@ -204,7 +204,7 @@
             <div class="primary-text">
                 <h2>I'm always interested in hearing <br> about new projects, so if you'd <br> like to chat please get in touch.</h2>
             </div>
-            <form action="https://formspree.io/f/xknkayjp" method="post">
+            <form id="contact-form" action="https://formspree.io/f/xknkayjp" method="post">
                 <ul>
                     <li>
                         <input type="text" maxlength="30" placeholder="Full name" name="fullname" required>
@@ -216,6 +216,7 @@
                         <textarea name="message" maxlength="500" placeholder="Enter text here" required></textarea>
                     </li>
                 </ul>
+                <div id="contact-form-errors"><</div>
                 <div class="button-container">
                     <button class="button-primary" type="submit">Get in touch</button>
                 </div>
