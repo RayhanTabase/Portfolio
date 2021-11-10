@@ -135,7 +135,8 @@ ul li a {
   border-bottom-right-radius: 2em;
 }
 
-.navbar .nav-links .menu-close, #closePopUp {
+.navbar .nav-links .menu-close,
+#closePopUp {
   align-self: flex-end;
   width: 2.5em;
   max-width: 2.5em;
@@ -333,6 +334,13 @@ header {
   background-position-x: 0, 105%;
 }
 
+.fullScreen-card .button-container {
+  order: 5;
+  display: flex;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
 #about-me .button-container { order: 3; }
 
 .tech-card {
@@ -396,6 +404,11 @@ header {
   margin-bottom: 3em;
 }
 
+.fullScreen-card h2 {
+  order: 2;
+  margin-bottom: 1em;
+}
+
 #contact .primary-text h2 {
   font-size: 1.875rem;
   line-height: 3rem;
@@ -451,7 +464,6 @@ footer {
   min-width: 100vw;
   min-height: 100vh;
   background: #c1c7d0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,11 +500,6 @@ footer {
   margin-bottom: 1em;
 }
 
-.fullScreen-card h2 {
-  order: 2;
-  margin-bottom: 1em;
-}
-
 .fullScreen-card .tags {
   order: 3;
   display: flex;
@@ -509,7 +516,7 @@ footer {
   margin-right: 0.5em;
 }
 
-.fullScreen-card .tags .tag:nth-last-child() {margin-right: 0;}
+.fullScreen-card .tags .tag:nth-last-child() { margin-right: 0; }
 
 .fullScreen-card p {
   order: 4;
@@ -517,13 +524,6 @@ footer {
   min-height: 15.8em;
   overflow: scroll;
   margin-bottom: 1em;
-}
-
-.fullScreen-card .button-container {
-  order: 5;
-  display: flex;
-  row-gap: 1em;
-  column-gap: 1em;
 }
 
 .fullScreen-card .button-container button {
@@ -655,7 +655,7 @@ footer {
     justify-content: flex-end;
     padding-right: 1em;
   }
-  
+
   .fullScreen-card {
     overflow: hidden;
     width: 70vw;
@@ -666,7 +666,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
   .fullScreen-card .fullScreenPopUp-image {
     height: 15em;
     min-height: 15em;
@@ -674,12 +674,12 @@ footer {
     width: 100%;
     min-width: 100%;
   }
-  
+
   .fullScreen-card h2 {
     text-align: left;
     grid-column: 1 / span 2;
   }
-  
+
   .fullScreen-card .tags {
     grid-row: 4;
     grid-column: 1 / span 3;
@@ -688,8 +688,8 @@ footer {
     margin-top: 1em;
   }
 
-  .fullScreen-card .tags .tag:nth-last-child() {margin-right: 0;}
-  
+  .fullScreen-card .tags .tag:nth-last-child() { margin-right: 0; }
+
   .fullScreen-card p {
     overflow: hidden;
     grid-row: 5;
@@ -697,10 +697,10 @@ footer {
     text-align: left;
     margin-top: 1.5em;
   }
-  
+
   .fullScreen-card .button-container {
     grid-row: 3;
-    grid-column: 3 / span 1 ;
+    grid-column: 3 / span 1;
     margin-top: 0;
     align-items: flex-start;
     justify-content: flex-end;
