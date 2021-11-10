@@ -434,6 +434,20 @@ textarea {
   padding: 1em;
 }
 
+.fullScreen-card p {
+  order: 4;
+  height: 15.8em;
+  min-height: 15.8em;
+  overflow: scroll;
+  margin-bottom: 1em;
+}
+
+#contact-form-errors p {
+  padding: 1em;
+  color: rgba(255, 0, 0, 0.712);
+  font-weight: 600;
+}
+
 textarea { height: 7.125em; }
 
 #contact form ul li input:focus,
@@ -517,14 +531,6 @@ footer {
 }
 
 .fullScreen-card .tags .tag:nth-last-child() { margin-right: 0; }
-
-.fullScreen-card p {
-  order: 4;
-  height: 15.8em;
-  min-height: 15.8em;
-  overflow: scroll;
-  margin-bottom: 1em;
-}
 
 .fullScreen-card .button-container button {
   display: flex;
