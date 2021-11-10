@@ -11,7 +11,7 @@ export const projects = [
                   took a galley of type and scrambled it 1960s with the relea"
                 `,
     tags:['Ruby on rails','css','JavScript','html'],
-    image:'./static/images/Projects/mobile-image.png'
+    image:'./static/images/Projects/image-placeholder.png'
   },
   {
     id:'1',
@@ -25,7 +25,7 @@ export const projects = [
                   took a galley of type and scrambled it 1960s with the relea"
                 `,
     tags:['Ruby on rails','css','JavScript','html'],
-    image:'./static/images/Projects/mobile-image.png'
+    image:'./static/images/Projects/image-placeholder.png'
   },
   {
     id:'2',
@@ -39,7 +39,7 @@ export const projects = [
                 took a galley of type and scrambled it 1960s with the relea"
               `,
     tags:['Ruby on rails','css','JavScript','html'],
-    image:'./static/images/Projects/mobile-image.png'
+    image:'./static/images/Projects/image-placeholder.png'
   },
   {
     id:'3',
@@ -53,7 +53,7 @@ export const projects = [
                   took a galley of type and scrambled it 1960s with the relea"
                 `, 
     tags:['Ruby on rails','css','JavScript','html'],
-    image:'./static/images/Projects/mobile-image.png'
+    image:'./static/images/Projects/image-placeholder.png'
   },
   {
     id:'4',
@@ -67,7 +67,7 @@ export const projects = [
                   took a galley of type and scrambled it 1960s with the relea"
                 `, 
     tags:['Ruby on rails','css','JavScript','html'],
-    image:'./static/images/Projects/mobile-image.png'
+    image:'./static/images/Projects/image-placeholder.png'
   },
   {
     id:'5',
@@ -81,7 +81,7 @@ export const projects = [
                   took a galley of type and scrambled it 1960s with the relea"
                 `, 
     tags:['Ruby on rails','css','JavScript','html'],
-    image:'./static/images/Projects/mobile-image.png'
+    image:'./static/images/Projects/image-placeholder.png'
   }
 ]
 
