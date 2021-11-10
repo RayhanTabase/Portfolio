@@ -19,3 +19,5 @@ document.querySelectorAll('.see_more').forEach((button) => {
 });
 
 document.querySelector('#contact-form').addEventListener('submit', validateEmail);
+
+document.querySelector('input[name="email"]').addEventListener('input', removeErrorMessage); 
