@@ -658,18 +658,18 @@ footer {
   
   .fullScreen-card {
     overflow: hidden;
-    width: 75vw;
-    height: 93vh;
-    max-width: 75vw;
-    max-height: 93vh;
-    overflow-y: scroll;
+    width: 70vw;
+    height: 90vh;
+    max-width: 70vw;
+    max-height: 90vh;
+    overflow-y: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   
   .fullScreen-card .fullScreenPopUp-image {
-    height: 30em;
-    min-height: 30em;
+    height: 15em;
+    min-height: 15em;
     grid-column: 1/ span 3;
     width: 100%;
     min-width: 100%;
