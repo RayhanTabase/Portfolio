@@ -6,8 +6,8 @@ import showPopUp from './popUp.js';
 
 import {
   removeErrorMessage,
-  validateEmail
-}  from './validators.js'
+  validateEmail,
+} from './validators.js';
 
 window.addEventListener('resize', () => { window.location.reload(); });
 if (window.innerWidth < 992) {
@@ -20,4 +20,4 @@ document.querySelectorAll('.see_more').forEach((button) => {
 
 document.querySelector('#contact-form').addEventListener('submit', validateEmail);
 
-document.querySelector('input[name="email"]').addEventListener('input', removeErrorMessage); 
+document.querySelector('input[name="email"]').addEventListener('input', removeErrorMessage);
