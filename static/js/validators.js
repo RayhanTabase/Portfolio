@@ -1,9 +1,8 @@
 import {
   email,
   name,
-  storageHandler
+  storageHandler,
 } from './localStorage.js';
-
 
 const errorMessage = document.querySelector('#contact-form-errors');
 function showError(error) {
@@ -16,7 +15,7 @@ export const validateEmail = (e) => {
   if (email.value === '' || /[A-Z]/.test(email.value)) {
     showError('Email should contain only lowercase characters');
     e.preventDefault();
-  }else{
-    storageHandler(name.value,email.value,"")
+  } else {
+    storageHandler(name.value, email.value, '');
   }
 };

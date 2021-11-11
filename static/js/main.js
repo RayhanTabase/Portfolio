@@ -4,7 +4,7 @@ import {
   removeErrorMessage,
   validateEmail,
 } from './validators.js';
-import { storeValues, autoFill, } from './localStorage.js'; 
+import { storeValues, autoFill } from './localStorage.js';
 
 function main() {
   window.addEventListener('resize', () => { window.location.reload(); });
@@ -18,9 +18,7 @@ function main() {
   document.querySelector('input[name="email"]').addEventListener('input', removeErrorMessage);
 
   autoFill();
-  storeValues() 
+  storeValues();
 }
 
 window.onload = main;
-
-
