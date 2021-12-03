@@ -4,7 +4,7 @@
 
 > My personal portfolio page
 
-Additional description about the project and its features.
+My portfolio page
 
 ## Built With
 
