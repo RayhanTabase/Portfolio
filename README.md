@@ -2,9 +2,8 @@
 
 # Personal Portfolio Page
 
-> My personal portfolio page
+> My personal portfolio page displaying a few projects and the programming technologies that I am very confident with
 
-My portfolio page
 
 ## Built With
 
