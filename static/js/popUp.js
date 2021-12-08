@@ -18,8 +18,8 @@ export default function showPopUp(id) {
     </ul>
     <p>${projects[id].description}</p>
     <div class="button-container">
-      <button class="button-primary" type="button">See Live <img src="./static/images/Buttons/seeLive.png" alt="live version image"></button>
-      <button class="button-primary" type="button">See Source <img src="./static/images/Buttons/github.png" alt="github image"> </button>
+      <a href="${projects[id].live}" class="button-primary" type="button">See Live <img src="./static/images/Buttons/seeLive.png" alt="live version image"></a>
+      <a href="${projects[id].source}" class="button-primary" type="button">See Source <img src="./static/images/Buttons/github.png" alt="github image"> </a>
     </div>
   `;
   popUpSection.appendChild(fullScreenCard);
