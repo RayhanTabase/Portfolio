@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 p,
@@ -33,10 +37,6 @@ h2 {
 }
 
 h1 .highlight { color: #36b37e; }
-
-a {
-  text-decoration: none;
-}
 
 p {
   font-weight: normal;

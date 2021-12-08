@@ -9,8 +9,8 @@ const projects = [
                 `,
     tags: ['CSS', 'JavScript', 'html'],
     image: './static/images/Projects/ToDoList.jpeg',
-    live:'https://rayhantabase.github.io/to-do-list/' ,
-    source:'https://github.com/RayhanTabase/to-do-list'
+    live: 'https://rayhantabase.github.io/to-do-list/',
+    source: 'https://github.com/RayhanTabase/to-do-list',
   },
   {
     id: '1',
@@ -25,8 +25,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
-    live:'#' ,
-    source:'#'
+    live: '#',
+    source: '#',
   },
   {
     id: '2',
@@ -41,8 +41,8 @@ const projects = [
               `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
-    live:'#' ,
-    source:'#'
+    live: '#',
+    source: '#',
   },
   {
     id: '3',
@@ -57,8 +57,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
-    live:'#' ,
-    source:'#'
+    live: '#',
+    source: '#',
   },
   {
     id: '4',
@@ -73,8 +73,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
-    live:'#' ,
-    source:'#'
+    live: '#',
+    source: '#',
   },
   {
     id: '5',
@@ -89,8 +89,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
-    live:'#' ,
-    source:'#'
+    live: '#',
+    source: '#',
   },
 ];
 
