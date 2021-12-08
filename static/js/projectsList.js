@@ -7,8 +7,10 @@ const projects = [
      In this project i wrote some of function definitions using ES6 and webpack technology
      and applied html, css and JavaScript best practices.
                 `,
-    tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
-    image: './static/images/Projects/image-placeholder.png',
+    tags: ['CSS', 'JavScript', 'html'],
+    image: './static/images/Projects/ToDoList.jpeg',
+    live:'https://rayhantabase.github.io/to-do-list/' ,
+    source:'https://github.com/RayhanTabase/to-do-list'
   },
   {
     id: '1',
@@ -23,6 +25,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
+    live:'#' ,
+    source:'#'
   },
   {
     id: '2',
@@ -37,6 +41,8 @@ const projects = [
               `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
+    live:'#' ,
+    source:'#'
   },
   {
     id: '3',
@@ -51,6 +57,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
+    live:'#' ,
+    source:'#'
   },
   {
     id: '4',
@@ -65,6 +73,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
+    live:'#' ,
+    source:'#'
   },
   {
     id: '5',
@@ -79,6 +89,8 @@ const projects = [
                 `,
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
     image: './static/images/Projects/image-placeholder.png',
+    live:'#' ,
+    source:'#'
   },
 ];
 

@@ -34,6 +34,10 @@ h2 {
 
 h1 .highlight { color: #36b37e; }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-weight: normal;
   font-size: 1.25rem;
